@@ -27,7 +27,14 @@ Our end product will be an online store that contains content (that is managed t
 
 You can find the repository for the end product here and a hosted example here.
 
-## .gitignore
+## Create project directory
+
+```java
+mkdir shopify-sanity-next-products
+cd shopify-sanity-next-products
+```
+
+## create file .gitignore
 ```java
 # Mac files
 .DS_Store
@@ -119,26 +126,68 @@ With the front-end ready to go our next job is to create a local instance of San
 The best way to get started with Sanity is to use Sanity's CLI tool. If you don't already have this, you can install the tool by running the following command in your terminal:
 
 ```java
+cd ..
+
 npm install -g @sanity/cli
 ```
 
 Upon completion of the installation, you will have access to a new terminal command called sanity - you can run sanity help to see a list of available commands from this tool.
 
-To create a new studio, run sanity init after running this command you should see something like this:
+To create a new studio, run `sanity init` after running this command you should see something like this:
 
 ## A screenshot showing the options presented to you when running sanity init
 A screenshot showing the options presented to you when running sanity init
 Note: If you aren't already logged into your Sanity account then you will be asked to log in or create an account with Sanity before seeing these options.
 
-Select Create new project from the list of options and give your project a name (this is the name that will be allocated to your project in your Sanity account dashboard).
+Select `Create new project` from the list of options and give your project a name (this is the name that will be allocated to your project in your Sanity account dashboard).
 
 Next, you will be asked about datasets. For the purpose of this guide, you can go ahead and use Sanity's default configuration by entering Y then pressing enter.
 
-Sanity will now ask you for a Project Output Path. To stay in line with this guide, enter the word studio and hit enter. You will see that Sanity has updated the Project Output Path to use the folder name studio as per the screenshot below:
+Sanity will now ask you for a Project Output Path. To stay in line with this guide, enter the word `studio` and hit enter. You will see that Sanity has updated the Project Output Path to use the folder name studio as per the screenshot below:
 
 ## A screenshot showing a list of Sanity Studio templates 
 A screenshot showing a list of Sanity Studio templates
-Finally, when presented with the Project Template options, please select the Clean project with no predefined schemas option.
+Finally, when presented with the Project Template options, please select the `Clean project with no predefined schemas` option.
+
+Selected Options
+```java
+You are setting up a new project!
+We will make sure you have an account with Sanity.io. Then we will
+install an open-source JS content editor that connects to
+the real-time hosted API on Sanity.io. Hang on.
+
+Press ctrl + C at any time to quit.
+
+Prefer web interfaces to terminals?
+You can also set up best practice Sanity projects with
+your favorite frontends on https://sanity.io/create
+
+Looks like you already have a Sanity-account. Sweet!
+
+? Select project to use Create new project
+? Your project name: Shopify Sanity Next Products
+Your content will be stored in a dataset that can be public or private, depending on
+whether you want to query your content with or without authentication.
+The default dataset configuration has a public dataset named "production".
+? Use the default dataset configuration? Yes
+✔ Creating dataset
+? Project output path: /mnt/ap/ap/shopify-sanity-next-products/studio
+? Select project template Clean project with no predefined schemas
+✔ Bootstrapping files from template
+✔ Resolving latest module versions
+✔ Creating default project files
+
+✔ Saved lockfile
+
+Success! Now what?
+
+▪ cd /mnt/ap/ap/shopify-sanity-next-products/studio, then:
+▪ sanity docs to open the documentation in a browser
+▪ sanity manage to open the project settings in a browser
+▪ sanity help to explore the CLI manual
+▪ sanity start to run your studio
+
+```
 
 After selecting this option, Sanity will proceed with the installation and initialisation of the studio. Once this is complete you should now have a project folder with a structure like this:
 
