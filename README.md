@@ -192,6 +192,34 @@ Success! Now what?
 After selecting this option, Sanity will proceed with the installation and initialisation of the studio. Once this is complete you should now have a project folder with a structure like this:
 
 ```java
+sudo tree  -L 2
+.
+├── README.md
+├── studio
+│   ├── README.md
+│   ├── config
+│   ├── node_modules
+│   ├── package.json
+│   ├── plugins
+│   ├── sanity.json
+│   ├── schemas
+│   ├── static
+│   ├── tsconfig.json
+│   └── yarn.lock
+└── web
+    ├── README.md
+    ├── next.config.js
+    ├── node_modules
+    ├── package-lock.json
+    ├── package.json
+    ├── pages
+    ├── postcss.config.js
+    ├── public
+    ├── styles
+    └── tailwind.config.js
+```
+
+```java
 web/
   .git
   .gitignore
