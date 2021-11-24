@@ -3,6 +3,8 @@
 
 # Dependency directories
 /node_modules
+/studio/node_modules
+node_modules
 
 .env.development
 *.lock
