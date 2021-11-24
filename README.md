@@ -27,8 +27,24 @@ Our end product will be an online store that contains content (that is managed t
 
 You can find the repository for the end product here and a hosted example here.
 
-## Let's install Next.js
+## .gitignore
+```java
+# Mac files
+.DS_Store
 
+# Dependency directories
+/node_modules
+
+.env.development
+*.lock
+.vscode/
+.idea/
+
+# lerna files
+/lerna-debug.log
+```
+
+## Let's install Next.js
 
 Before we get hands-on with code, we need to start by setting up the tools that we will use for this project. We're going to use Next.js to develop the front-end layer of our app, so we'll start there.
 
@@ -40,15 +56,61 @@ npx create-next-app
 yarn create next-app
 ```
 
-Psst: Don't have Node or NPM installed? There are some great instructions here to help you get started with installing Node and NPM on your computer.
+Psst: Don't have Node or NPM installed? There are some great instructions here to help you get started with installing Node and NPM on your computer. https://www.sanity.io/help/a5f6caba-53c9-4a9f-96ef-1bd1ae8f5c10
 
-The create-next-app tool will ask you to provide a name for your Next App. For the purpose of this guide, please call it web. Once create-next-app is complete, you should have a file structure similar to the screenshot below:
+The `create-next-app` tool will ask you to provide a name for your Next App. For the purpose of this guide, please call it `web`. Once `create-next-app` is complete, you should have a file structure similar to the screenshot below:
 
-## A screenshot showing our example file structure 
+Example file structure 
+```java
+drwxrwxr-x   6 tmc tmc  4096 Nov 24 08:35 web/
+drwxr-xr-x   4 tmc tmc  4096 Nov 24 08:34 ./
+drwxrwxr-x   8 tmc tmc  4096 Nov 24 07:44 .git/
+-rw-r--r--   1 tmc tmc   134 Nov 24 07:36 .gitignore
+-rw-r--r--   1 tmc tmc 30194 Nov 24 07:27 README.md
+drwxr-xr-x 173 tmc tmc 12288 Nov 24 07:00 ../
+```
 A screenshot showing our example file structure
 
 ## Spicing up styles with Tailwind
-The examples in this guide include components that have been developed with Tailwind CSS. Please follow the latest instructions from Tailwind's website here to install Tailwind in your Next.js application.
+The examples in this guide include components that have been developed with Tailwind CSS. Please follow the latest instructions from Tailwind's website here to install Tailwind in your Next.js application. https://tailwindcss.com/docs/guides/nextjs#setting-up-tailwind-css
+
+
+## Install Tailwind via npm
+Install Tailwind and its peer-dependencies using npm:
+
+```java
+cd web
+
+# If you're on Next.js v10 or newer
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+```
+
+
+## Create your tailwind configuration files
+Next, generate your tailwind.config.js and postcss.config.js files:
+
+```java
+npx tailwindcss init -p
+```
+
+This will create a minimal tailwind.config.js file at the root of your project:
+
+```java
+// tailwind.config.js
+module.exports = {
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Learn more about configuring Tailwind in the configuration documentation. https://tailwindcss.com/docs/configuration
 
 ## Getting started with Sanity
 With the front-end ready to go our next job is to create a local instance of Sanity's Studio. This is the application we will use to manage page content outside of Shopify.
