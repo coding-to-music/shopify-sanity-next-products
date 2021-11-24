@@ -245,9 +245,9 @@ studio/
 ```
 
 ## Let's build the Schema
-Before we start working on the Next.js code we're going to dive into Sanity and set up the schema for our website. The primary focus for this tutorial is the homepage, so we're going to create a singleton document (or "one-off"). This is a great opportunity to see Sanity's flexibility with the Structure Builder.
+Before we start working on the Next.js code we're going to dive into Sanity and set up the schema for our website. The primary focus for this tutorial is the homepage, so we're going to create a singleton document (or "one-off"). This is a great opportunity to see Sanity's flexibility with the Structure Builder. https://www.sanity.io/docs/structure-builder-typical-use-cases
 
-First, we need to create the homepage document. Start by creating a file called homepage.js within your studio/schemas folder. Take the contents of this snippet and add it to the homepage.js file.
+First, we need to create the homepage document. Start by creating a file called `homepage.js` within your `studio/schemas` folder. Take the contents of this snippet and add it to the `homepage.js` file.
 
 ```java
 // studio/schemas/homepage.js
@@ -308,7 +308,7 @@ This is great, but to give our editor the required behavior for managing a "one-
 
 ## Defining Parts
 
-There is a fantastic Sanity guide about the parts system. For now, all we need to know is that we are going to use this system to customize our Desk.
+There is a fantastic Sanity guide about the parts system. https://www.sanity.io/docs/parts For now, all we need to know is that we are going to use this system to customize our Desk.
 
 From the studio folder, open sanity.json and take a look at the parts array, it should look something like this:
 
