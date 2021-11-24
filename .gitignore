@@ -1,0 +1,13 @@
+# Mac files
+.DS_Store
+
+# Dependency directories
+/node_modules
+
+.env.development
+*.lock
+.vscode/
+.idea/
+
+# lerna files
+/lerna-debug.log
