@@ -1,4 +1,4 @@
-# Headless Ecommerce Tutorial with (Sanity and) the Shopify API
+# Next.js Headless Ecommerce Tutorial with Sanity and the Shopify API
 
 https://www.sanity.io/guides/headless-ecommerce-with-sanity-and-shopify-api#b6470bce4b32
 
@@ -7,6 +7,38 @@ By Jamie Bradley
 # Quick Start
 
 
+* [Next.js Headless Ecommerce Tutorial with Sanity and the Shopify API](#nextjs-headless-ecommerce-tutorial-with-sanity-and-the-shopify-api)
+* [Quick Start](#quick-start)
+* [Introduction](#introduction)
+   * [Shopify and Sanity logos](#shopify-and-sanity-logos)
+   * [What we'll be building today](#what-well-be-building-today)
+   * [Create project directory](#create-project-directory)
+   * [create file .gitignore](#create-file-gitignore)
+   * [Let's install Next.js](#lets-install-nextjs)
+   * [Spicing up styles with Tailwind](#spicing-up-styles-with-tailwind)
+   * [Install Tailwind via npm](#install-tailwind-via-npm)
+   * [Create your tailwind configuration files](#create-your-tailwind-configuration-files)
+   * [Getting started with Sanity](#getting-started-with-sanity)
+      * [Installing the studio](#installing-the-studio)
+   * [A screenshot showing the options presented to you when running sanity init](#a-screenshot-showing-the-options-presented-to-you-when-running-sanity-init)
+   * [A screenshot showing a list of Sanity Studio templates](#a-screenshot-showing-a-list-of-sanity-studio-templates)
+   * [Let's build the Schema](#lets-build-the-schema)
+   * [Defining Parts](#defining-parts)
+   * [Building the Homepage](#building-the-homepage)
+   * [Run this command from the web/ directory!](#run-this-command-from-the-web-directory)
+   * [Writing the Markup &amp; Mapping Content](#writing-the-markup--mapping-content)
+   * [How to retrieve data from Shopify](#how-to-retrieve-data-from-shopify)
+   * [Getting a Shopify Storefront Access Token](#getting-a-shopify-storefront-access-token)
+   * [Add products to Shopify](#add-products-to-shopify)
+   * [Displaying products in Next.js](#displaying-products-in-nextjs)
+   * [Run this from the web/ folder!](#run-this-from-the-web-folder)
+* [NPM](#npm)
+* [Yarn](#yarn)
+* [web/.env.local](#webenvlocal)
+   * [A quick note on variants](#a-quick-note-on-variants)
+   * [How will users navigate to the checkout?](#how-will-users-navigate-to-the-checkout)
+   * [Conclusion](#conclusion)
+   
 # Introduction
 One of my favorite things about Jamstack is the ability to drip-feed third-party services into your website through APIs. We have seen a huge increase in "headless" content services, such as Sanity, but today I want to talk about headless commerce.
 
