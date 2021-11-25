@@ -380,7 +380,7 @@ Before moving on to integrating Sanity with Next, open your studio, and add a ti
 ## Building the Homepage
 We're going to set up a dedicated file that will be used to handle the fetching of data from Sanity.
 
-First, let's navigate to our web folder and install the next-sanity package.
+First, let's navigate to our `web` folder and install the next-sanity package.
 
 ## Run this command from the web/ directory! ##
 
@@ -392,7 +392,17 @@ npm i next-sanity
 yarn add next-sanity
 ```
 
-Create a new folder within the web directory called lib/. Within this folder, create a file called sanity.js and insert the following code:
+Create a new folder within the `web` directory called `lib/`. 
+
+```java
+mkdir web/lib
+
+touch web/lib/sanity.js
+```
+
+Within this folder, create a file called `sanity.js` and insert the following code:
+
+
 
 ```java
 // web/lib/sanity.js

@@ -1,3 +1,5 @@
 module.exports = {
-  reactStrictMode: true,
-}
+  images: {
+		domains: ["images.pexels.com", "cdn.shopify.com"],
+  },
+};
