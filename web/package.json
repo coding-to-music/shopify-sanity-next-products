@@ -8,6 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "graphql": "^15.7.2",
+    "graphql-request": "^3.6.1",
     "kill-port": "^1.6.1",
     "next": "12.0.4",
     "next-sanity": "^0.4.0",

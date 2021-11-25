@@ -1,4 +1,4 @@
-# Next.js Headless Ecommerce Tutorial with Sanity and the Shopify API
+# Next.js Headless Ecommerce Tutorial with Sanity and Shopify
 
 https://www.sanity.io/guides/headless-ecommerce-with-sanity-and-shopify-api#b6470bce4b32
 
@@ -38,7 +38,7 @@ By Jamie Bradley
    * [A quick note on variants](#a-quick-note-on-variants)
    * [How will users navigate to the checkout?](#how-will-users-navigate-to-the-checkout)
    * [Conclusion](#conclusion)
-   
+
 # Introduction
 One of my favorite things about Jamstack is the ability to drip-feed third-party services into your website through APIs. We have seen a huge increase in "headless" content services, such as Sanity, but today I want to talk about headless commerce.
 
@@ -585,7 +585,7 @@ First, we need to get a Storefront Access Token from Shopify. If you already hav
 
 You will need access to a Shopify store. A live store will work fine, but if you're just playing around then I would suggest creating a development store.
 
-You can create a development store with a Shopify Partner Account. If you don't have an account then click here to register. Creating a Partners Account means that you will have access to a fully-featured store without having to sign up for a free trial.
+You can create a development store with a [Shopify Partner Account](https://www.shopify.co.uk/partners). If you don't have an account then [click here to register](https://partners.shopify.com/signup). Creating a Partners Account means that you will have access to a fully-featured store without having to sign up for a free trial.
 
 ## Getting a Shopify Storefront Access Token
 Once you have access to a store, you need to log into the Shopify Admin and create a Shopify App. You can do this by visiting your store's URL (which will look like https://your-store-name.myshopify.com/admin) and clicking on the "Apps" link from the left-hand navigation bar. This will take you to the Apps page. Scroll to the bottom of this page and locate the following text "Working with a developer on your shop? Manage private apps", click "Manage private apps".
@@ -601,8 +601,8 @@ Fill out the fields in the "App Details" section, then scroll to the bottom of t
 Selecting this checkbox tells Shopify that you intend to use the Storefront API as part of your private app. Ensure the following permissions are selected:
 
 - Read products, variants, and collections
-- Read product tags
-- Read inventory of products and their variants
+  - Read product tags
+  - Read inventory of products and their variants
 - Read and modify checkouts
  
 Once you have selected these options, click the save button located at the top right-hand side of the screen.
@@ -621,7 +621,7 @@ If you have no products in your store, then go ahead and add some. For the purpo
  
 Once the products have been added, we need to create a collection. Click on the "Collections" link from the sidebar.
 
-Give your collection the name of "Homepage" and scroll down to the Collection Type section. Shopify gives you the ability to create automated collections. This is a pretty cool feature that you can read more about here. But, for the purpose of this tutorial, we are going to create a Manual collection.
+Give your collection the name of "Homepage" and scroll down to the Collection Type section. Shopify gives you the ability to create automated collections. This is a pretty cool feature that you can [read more about here](https://help.shopify.com/en/manual/products/collections/automated-shopify-collection). But, for the purpose of this tutorial, we are going to create a Manual collection.
 
 Select the radio button labeled "Manual collection".
 
