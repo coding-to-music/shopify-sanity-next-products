@@ -640,17 +640,20 @@ Let's start by installing some new dependencies.
 
 We're going to install a package called graphql-request. This is a minimal GraphQL client that can be used in both Node and browser-based environments. Install the package with NPM or Yarn respectively:
 
-## Run this from the web/ folder! ##
+```java
+# Run this from the web/ folder! ##
 
 # NPM
 npm i graphql-request graphql
 
 # Yarn
 yarn add graphql-request graphql
+```
 
-Before we write some GraphQL queries, it would be a good idea to store our Shopify Endpoint URL and access token as environment variables. Your URL will look something like this: https://your-store-name.myshopify.com.
+Before we write some GraphQL queries, it would be a good idea to store our Shopify Endpoint URL and access token as environment variables. Your URL will look something like this: 
+https://your-store-name.myshopify.com.
 
-Open the .env.local` file that you created earlier and include the following variables. Be sure to replace my placeholder values with your actual values.
+Open the `.env.local` file that you created earlier and include the following variables. Be sure to replace my placeholder values with your actual values.
 
 # web/.env.local
 
